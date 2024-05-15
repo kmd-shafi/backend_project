@@ -1,0 +1,14 @@
+{
+  "name": "backend_project",
+  "version": "1.0.0",
+  "description": "a back end ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "K.Mohammed Shafi",
+  "license": "ISC"
+}
