@@ -9,3 +9,5 @@ project guidelines :-https://app.eraser.io/workspace/SvqgEsVNcAQpVicFwQWi?origin
 4th root => src folder
 
 5th npm install -D nodemon => auto refresh page
+
+6th npm install -D prettier root => .prettierrc file
