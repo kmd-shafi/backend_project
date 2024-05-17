@@ -1,9 +1,18 @@
 import connectDB from "./db/index.js";
+import { app } from "./app.js";
 
 import dotenv from "dotenv";
 dotenv.config({ path: "./env" });
 
-connectDB();
+connectDB()
+  .than(() => {
+    app.listen(process.env.PORT || 4000, () => {
+      console.log(`Listening on port ${process.env.PORT}`);
+    });
+  })
+  .catch((errror) => {
+    console.log(`Mongo DB commection Error !!! ${errror}`);
+  });
 /*
 import express from "express";
 const app = express();
